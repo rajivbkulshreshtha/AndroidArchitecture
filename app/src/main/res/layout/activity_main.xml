@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:paddingHorizontal="10dp"
+	tools:context=".MainActivity">
+
+	<Button
+		android:id="@+id/btnMVC"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="MVC"
+		app:layout_constraintBottom_toTopOf="@+id/btnMVP"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+
+	<Button
+		android:id="@+id/btnMVP"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="MVP"
+		app:layout_constraintBottom_toTopOf="@+id/btnMVVM"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/btnMVC" />
+
+
+	<Button
+		android:id="@+id/btnMVVM"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="MVVM"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/btnMVP" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
